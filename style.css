@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 6vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#file{
+    background-color: #59e4ee;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'centro';
+    text-align: center;
+}
+
+.center{
+    height: 100%;
+    grid-area: centro;
+}
+
+.center{
+    height: 100%;
+    background: #fff2cc;
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+  }
+
+
+.inputClass{
+    margin-top: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0.2vw solid #105d9b;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+
+.button{
+    margin: 2vw;
+    margin-top: 3vw;
+    padding: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0.2vw solid #5f4902;
+    background-image: linear-gradient(180deg,rgb(244, 206, 182),rgb(231, 135, 25), rgb(235, 139, 29), #f7b162);
+    border-radius: 0.5vw;
+    animation: stylebuttons 3s infinite;
+  }
+
+  @keyframes stylebuttons{
+     0%{border: 0.2rem solid rgb(191, 151, 8)}
+     50%{border: 0.2rem solid rgb(164, 109, 7)}
+     100%{border: 0.2rem solid rgb(189, 172, 14)}   
+  }
+
+.options{
+    color: rgb(47, 157, 165);
+    margin: 0.2rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.instruct{
+    color: rgb(23, 105, 110);
+    margin: 0.2rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightInput{
+    margin-top: 3vw;
+    color: black;
+    border: 0.2vw solid #5f4902;
+    background-image: linear-gradient(180deg,rgb(83, 231, 108),rgb(93, 175, 107), #087a0e);
+    border-radius: 0.5vw;
+}
+
+.wrongInput{
+    margin-top: 3vw;
+    color: black;
+    border: 0.2vw solid #5f4902;
+    background-image: linear-gradient(180deg,rgb(221, 129, 67),rgb(196, 82, 54), #cc3611);
+    border-radius: 0.5vw;
+}
+
+.right{
+    margin: 2vw;
+    margin-top: 3vw;
+    padding: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0.2rem solid #e7b40e;
+    background-image: linear-gradient(180deg,rgb(83, 231, 108),rgb(93, 175, 107), #087a0e);
+    border-radius: 0.5vw;
+}
+
+.wrong{
+    margin: 2vw;
+    margin-top: 3vw;
+    padding: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0.2rem solid #e6b617;
+    background-image: linear-gradient(180deg,rgb(243, 172, 125),rgb(202, 118, 97), #be6b56);
+    border-radius: 0.5vw;
+}
+
+.mainButtons{
+    margin: 2vw;
+    margin-top: 8vw;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0.2vw solid #5f4902;
+    background-image: linear-gradient(180deg,rgb(19, 151, 107),rgb(17, 189, 132), rgb(48, 197, 148),#07979c);
+    border-radius: 0.5vw;
+    animation: stylebuttons 3s infinite;
+}
+
+.desable{
+    margin: 2vw;
+    margin-top: 3vw;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(53, 51, 51);
+    border: 0.2rem solid #adadaa;
+    background-image: linear-gradient(180deg,rgb(240, 241, 245),rgb(190, 204, 204), rgb(178, 187, 187));
+    border-radius: 1vw;
+    animation: none;
+}
+
+.score{
+    color: rgb(47, 157, 165);
+    margin: 0.2rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.darkClass{
+    height: 100%;
+    color: white;
+    grid-area: centro;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%  100%;
+}
+
+
+#dark{
+ margin-top: 10vw;
+
+}
+
+#dark > button{
+    padding: 2vw;
+    margin-right: 4vw;
+    margin-left: 2vw;
+    border-radius: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg,rgb(99, 107, 109),rgb(7, 10, 10), rgb(70, 80, 80));
+    color: white;
+}
+
+
+.sound{
+    background-image: linear-gradient(180deg,rgb(174, 184, 42),rgb(211, 214, 8), rgb(245, 244, 178));
+    margin: 4vw;
+    margin-top: 8vw;
+    padding: 2vw;
+    border-radius: 50%;
+}
+
+.sticky{
+    width: 60%;
+    height: 40%;
+    padding: 2%;
+    position: sticky;
+    top: 36%;
+    left: 20%;
+    position: absolute;
+    border: 1rem solid rgb(55, 55, 247);
+    background-color: rgb(68, 151, 247);
+    box-sizing: border-box;
+}
+
+.sticky > h2{
+    box-sizing: border-box;
+}
+
+.sticky > button{
+    margin-top: 8vw;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 1vw solid rgb(55, 55, 247);
+}
+
+.ocultar{
+    display: none;
+    box-sizing: border-box;
+}
+
+
+/* Codigo para el recuadro de seleccionar level */
+
+nav {
+    width: 30vw;
+    padding-left: 0vw;
+}
+
+.cont-ul {
+    width: 30vw;
+    border-right: solid 0.8vw blue;
+    border-bottom: solid 0.8vw blue;
+    border-top: solid 0.8vw blue;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 2vw;
+    transition:  all .3s ease 0s;
+}
+
+li:hover {
+    background-color: #008849;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    width: 45vw;
+    display: none;
+    position: absolute;
+    margin-top: -3vw;
+}
+
+.ul-second > li {
+    width: 30vw;
+    transform: translateX(-20px);
+    text-align: center;
+    margin-left: 32.5vw;
+    border: solid 0.8vw blue;
+}
+
+.ul-second > li:hover {
+    background-color: #008849;
+    z-index: -1;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+    border: solid 0.8vw blue;
+    margin-left: 0.1vw;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
+
+.level{
+  display: none;
+}
+
+.levelShow{
+  display: block;
+  position: sticky;
+  top: 20vw;
+  left: 0.9vw;
+  position: absolute;
+  height: 115vw;
+  width: 98vw;
+  background-color: #fff2cc;
+  border: solid blue 1.2vw;
+}
+
+.levelShow h3{
+  text-align: center;
+}
+
+nav{
+  margin-top: 5vw;
+}
+
+li{
+  background-color: azure;
+}
+
+.listen{
+    border-radius: 50%;
+    position: sticky;
+    top: 15vw;
+    left: 5vw;
+    padding: 2vw;
+    background-color: orange;
+}
+
+span{
+    font-size: 4vw !important;
+    color: #088641;
+    font-style: italic;
+}
+
+
+@media screen and (min-width: 558px) {
+  *{
+    font-size: 3vw;
+  }
+
+  .listen{
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+  }
+
+  .ul-second > li {
+    margin-left: 32vw;
+}
+
+span{
+    font-size: 2vw !important;
+    color: #088641;
+    font-style: italic;
+}
+}
+
+
+@media screen and (min-width: 839px) {
+  *{
+    font-size: 2vw;
+  }
+
+  .listen{
+    position: relative;
+    top: 0vw;
+    left: 0vw;
+  }
+
+  .ul-second > li {
+    margin-left: 29vw;
+ }
+}
+
+span{
+    font-size: 2vw; 
+    color: #088641;
+    font-style: italic;
+}
+
+.body{
+    display: none;
+}

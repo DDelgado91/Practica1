@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+<!-- Etiqueta de recuadro de cambiar de nivel -->
+<div class="level" id="levelt">
+    <h3>Select a level</h3>
+    <nav>
+        <ul class="cont-ul">
+            <li class="develop">
+                UNIT A
+                <ul class="ul-second">
+                    <li class="front">
+                        Module 1
+                        <ul class="ul-third">
+                            <li data-id="levelAM1L1">Level 1</li>
+                            <li data-id="levelAM1L2">Level 2</li>
+                            <li data-id="levelAM1L3">Level 3</li>
+                        </ul>
+                    </li>
+                    <li class="front">
+                        Module 2
+                        <ul class="ul-third">
+                            <li data-id="levelAM2L1">Level 1</li>
+                            <li data-id="levelAM2L2">Level 2</li>
+                            <li data-id="levelAM2L3">Level 3</li>
+                        </ul>
+                    </li>
+                    <li class="front">
+                        Module 3
+                        <ul class="ul-third">
+                            <li data-id="levelAM3L1">Level 1</li>
+                            <li data-id="levelAM3L2">Level 2</li>
+                            <li data-id="levelAM3L3">Level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+                <ul class="cont-ul">
+            <li class="develop">
+                UNIT B
+                <ul class="ul-second">
+                    <li class="front">
+                        Module 1
+                        <ul class="ul-third">
+                            <li data-id="levelBM1L1">Level 1</li>
+                            <li data-id="levelBM1L2">Level 2</li>
+                            <li data-id="levelBM1L3">Level 3</li>
+                        </ul>
+                    </li>
+                    <li class="front">
+                        Module 2
+                        <ul class="ul-third">
+                            <li data-id="levelBM2L1">Level 1</li>
+                            <li data-id="levelBM2L2">Level 2</li>
+                            <li data-id="levelBM2L3">Level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+                <ul class="cont-ul">
+            <li class="develop">
+                UNIT C
+                <ul class="ul-second">
+                    <li class="front">
+                        Module 1
+                        <ul class="ul-third">
+                            <li data-id="levelCM1L1">Level 1</li>
+                            <li data-id="levelCM1L2">Level 2</li>
+                            <li data-id="levelCM1L3">Level 3</li>
+                        </ul>
+                    </li>
+                    <li class="front">
+                        Module 2
+                        <ul class="ul-third">
+                            <li data-id="levelCM2L1">Level 1</li>
+                            <li data-id="levelCM2L2">Level 2</li>
+                            <li data-id="levelCM2L3">Level 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </div>
+<div class="container">
+ <div class="center" data-dark>
+    <div class="sticky" id="stick">
+        <h2 id="tit">Seleccionar Vos</h2>
+        <button id="buthon" onclick="remover()">Ok</button>
+    </div>
+    <h1 id="tempo" style="color: rgb(185, 96, 8); font-size: 2rem; font-family: cArial, Helvetica, sans-serif;">Let's practice!</h1>
+    <button class="listen" onclick="sounder2()" id="sounderBTN">♪♪♪</button>
+    <div class="input" id="enter"></div>
+    <button onclick="resps()" class="mainButtons" >Answer <br><span>Date</span></button> 
+    <button onclick="check1()" class="mainButtons">Score<br><span>puntaje</span></button> 
+    <button onclick="ramdom()" class="mainButtons" id="continuar">Continue <br><span>continuar</span></button>
+    <h1 class="score">Score</h1>
+    <button class="mainButtons" onclick="hard()" id="btnHard">Hard <br><span>difícil</span></button>
+    <select class="mainButtons" id="speech-select" style="width: 20%;">
+        <option value="" class="mainButtons" >Vos</option>
+    </select>   
+    <div id="dark"><button onclick="claseDark()" id="btnContent">dark</button><button onclick="hider()">Level</button></div>
+    <button class="sound" onclick="sound()" id="mute">Listen</button>
+ </div>
+</div>
+</body>
+<script src="codigo.js"></script>
+</html>
